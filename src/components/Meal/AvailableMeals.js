@@ -38,6 +38,7 @@ const EXAMPLE_MEALS = [
 const AvailableMeals = (props) => {
   const mealList = EXAMPLE_MEALS.map((meal) => (
     <MealItem
+      id={meal.id}
       key={meal.id}
       name={meal.name}
       description={meal.description}
