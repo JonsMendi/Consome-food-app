@@ -4,11 +4,12 @@ const MealsSummary = (props) => {
   return (
     <div className={styles.summary}>
       <h2>"Consommé or Consommé?"</h2>
+      <p>We are Consommé, we consume!</p>
       <p>
-        Choose the best, almost extinct vital products to keep your pleasure and
-        joy above anything else.
+        Don't miss our Monday to Friday promotions, pay the triple for half
+        portion!
       </p>
-      <p>Spend your fortune with us, Consommé!</p>
+      <p>Spend your fortune with us.</p>
     </div>
   );
 };
