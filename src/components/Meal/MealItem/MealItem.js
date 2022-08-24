@@ -7,7 +7,7 @@ const MealItem = (props) => {
   const cartCtx = useContext(CartContext);
 
   const addToCartHandler = (amount) => {
-    cartCtx.addItems({
+    cartCtx.addItem({
       id: props.id,
       name: props.name,
       amount: amount,
@@ -23,7 +23,7 @@ const MealItem = (props) => {
         <div className={styles.price}>{`$ ${props.price}`}</div>
       </div>
       <div>
-        <MealItemForm onAddToCart={addToCartHandler} />
+        <MealItemForm id={props.id} onAddToCart={addToCartHandler} />
       </div>
     </li>
   );
